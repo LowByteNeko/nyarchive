@@ -15,7 +15,7 @@ typedef enum {
 } header_flags;
 
 typedef struct {
-    char name[100];
+    char name[255];
     time_t last_modification;
     mode_t permissions;
     uid_t uid;
@@ -23,7 +23,7 @@ typedef struct {
 } dir_header;
 
 typedef struct {
-    char name[100];
+    char name[255];
     time_t last_modification;
     off_t size;
     mode_t permissions;
@@ -33,7 +33,7 @@ typedef struct {
 } file_header;
 
 typedef struct {
-    char name[100];
+    char name[255];
     time_t last_modification;
     mode_t permissions;
     uid_t uid;
