@@ -1,7 +1,9 @@
 #ifndef NYARCHIVE_TYPES
 #define NYARCHIVE_TYPES
 
-#import "content_headers.h"
+#include <stdio.h>
+
+#import "headers.h"
 
 typedef struct {
     union {
@@ -14,5 +16,7 @@ typedef struct {
     unsigned long length;
     unsigned char *content;
 } nya_file;
+
+typedef FILE* nya_archive;
 
 #endif
