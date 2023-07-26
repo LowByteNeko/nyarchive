@@ -16,7 +16,7 @@ typedef enum {
 
 typedef struct {
     char name[255];
-    time_t last_modification;
+    time_t created_at;
     mode_t permissions;
     uid_t uid;
     gid_t gid;
@@ -24,7 +24,7 @@ typedef struct {
 
 typedef struct {
     char name[255];
-    time_t last_modification;
+    time_t created_at;
     off_t size;
     mode_t permissions;
     uid_t uid;
@@ -34,7 +34,7 @@ typedef struct {
 
 typedef struct {
     char name[255];
-    time_t last_modification;
+    time_t created_at;
     mode_t permissions;
     uid_t uid;
     gid_t gid;
