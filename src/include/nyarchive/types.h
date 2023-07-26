@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 
-#import "headers.h"
+#include "headers.h"
 
 typedef struct {
     union {
