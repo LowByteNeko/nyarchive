@@ -43,4 +43,5 @@ typedef struct {
 
 typedef hardlink_header symlink_header;
 
+dir_header generate_dir_header(char *directory);
 #endif

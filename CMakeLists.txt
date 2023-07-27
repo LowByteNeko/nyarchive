@@ -14,9 +14,11 @@ set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -rdynamic -D_GNU_SOURCE")
 include_directories(src/include)
 include_directories(src/utils)
 
-FILE(GLOB LIB src/lib/*.c)
+FILE(GLOB LIB src/lib/*.c src/lib/*.h)
 
 # Libraries
 message("Configuring libraries")
 add_library(crashtrace STATIC src/utils/crashtrace.c)
 add_library(nyarchive STATIC ${LIB})
+add_executable(test src/test.c)
+target_link_libraries(test crashtrace nyarchive)

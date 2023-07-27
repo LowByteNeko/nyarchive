@@ -1,15 +1,12 @@
 #include <unistd.h>
-#include <time.h>
 #include <assert.h>
-#include <stddef.h>
 #include <stdio.h>
 #include <string.h>
-#include <dirent.h>
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <nyarchive/headers.h>
 
-// directory must be name of the directory
+// directory must be named of the directory
 dir_header generate_dir_header(char *directory) {
     dir_header header;
     memset(&header, 0, sizeof(dir_header));
